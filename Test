@@ -1,9 +1,9 @@
-#include<stdio.h>
-int main()
-{
-	int num;
-	printf("Enter the number");
-	scanf("%d",&num);
+package tests;
+ public class main {
+	public static void main(String args[])
+     {
+    int num = 4;
+   
 	int k = num;
 	int space = num * 2 ;
 	int i,count=0,val=1,m=1;
@@ -11,14 +11,14 @@ int main()
 	{
 		for(i=0;i<space;i++)
 		{
-			printf("  ");
+			System.out.print("  ");
 		}
 		space = space - 2 ;
 		if(count == 0)
 		{
 			for(i=m;i<(num+m);i++)
 			{
-				printf("%d ",i);
+				 System.out.print(+i);
 				val += 1 ;
 			}
 			count = 1 ;
@@ -31,16 +31,18 @@ int main()
 			
 			for(i=(m+num);i>(m);i--)
 			{
-				printf("%d ",i);
+				System.out.print(+i);
 			}
 			val = val+ num;
 			m = val ;
 			count = 0;
 		}
-		printf("\n");
+		System.out.println(" ");
 		k = k - 1 ;
 
 	}
+	
 
-
+}
+    
 }
